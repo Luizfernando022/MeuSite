@@ -56,7 +56,7 @@ header {
   /* margin-right: 390px; */
 }
 
-.liLogo{
+.liLogo {
   display: inline-block;
   margin-left: 100px;
   border-radius: 5px;
@@ -141,7 +141,6 @@ p {
   justify-content: space-around;
 }
 #churras {
- 
   background-color: rgb(131, 118, 0);
   display: flex;
   justify-content: center;
@@ -150,7 +149,6 @@ p {
   flex-shrink: 0;
 }
 #vermelho {
-  
   background-color: rgba(255, 0, 0, 0.562);
   display: flex;
   justify-content: center;
@@ -159,7 +157,6 @@ p {
   flex-shrink: 0;
 }
 #amarelo {
- 
   background-color: rgba(255, 255, 255, 0.568);
   display: flex;
   justify-content: center;
@@ -168,7 +165,6 @@ p {
   flex-shrink: 0;
 }
 #azul {
-  
   background-color: rgba(4, 0, 255, 0.555);
   display: flex;
   justify-content: center;
@@ -176,16 +172,15 @@ p {
   flex-wrap: wrap;
   flex-shrink: 0;
 }
-.tec{
+.tec {
   display: inline-block;
   margin-left: 25px;
   border-radius: 5px;
   padding: 10px;
   transition-property: background-color, padding, color, border-radius;
   transition-duration: 500ms;
-  
 }
-#tec{
+#tec {
   background-color: rgba(255, 255, 255, 0.212);
   width: 600px;
   display: flex;
