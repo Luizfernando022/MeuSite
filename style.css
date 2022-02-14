@@ -104,13 +104,12 @@ a {
 .pp {
   padding: 10;
   margin-bottom: 25px;
-  transition-property: background-color, padding, color, border-radius,
-    font-size;
+  transition-property: background-color, padding, color, border-radius,font-size;
   transition-duration: 500ms;
   margin-top: 15px;
 }
 .pp:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.26);
   color: black;
   border-radius: 5px;
   font-size: 22px;
@@ -139,9 +138,10 @@ p {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 50px;
 }
 #churras {
-  background-color: rgb(131, 118, 0);
+  background-color: rgba(233, 160, 2, 0.844);
   display: flex;
   justify-content: center;
   align-content: flex-start;
@@ -230,3 +230,16 @@ p {
   animation-timing-function: cubic-bezier(0, 0, 1, 1);
   animation-direction: normal;
 }
+.pixelP{
+  background-image: linear-gradient(to right,red,blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+.churrasP{
+  background-image: linear-gradient(to right,rgba(233, 160, 2, 0.844),rgba(100, 68, 0, 0.844));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
