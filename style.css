@@ -7,8 +7,8 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --gradiente: linear-gradient(to right, yellow, orange, orange, red, red);
-  --gradienteLogo: linear-gradient(to right, red, red, orange, orange, yellow);
+  --gradiente: linear-gradient(to right, white, white, rgba(255,255,255,0.700), rgba(255, 255, 255, 0.500), rgba(255, 255, 255, 0.500));
+  --gradienteLogo: linear-gradient(to right,rgba(255, 255, 255, 0.500), rgba(255, 255, 255, 0.500),rgba(255, 255, 255, 0.700),white,white);
 }
 header {
   width: 100%;
