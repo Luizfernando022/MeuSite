@@ -283,7 +283,7 @@ p {
 .animado {
   width: 150px;
   border-radius: 30px;
-  height: 6px;
+  height: 8px;
   background-color: black;
   animation-name: animacao;
   animation-duration: 6s;
@@ -294,7 +294,7 @@ p {
 .animadoReverse {
   width: 150px;
   border-radius: 30px;
-  height: 6px;
+  height: 8px;
   background-color: rgb(0, 0, 0);
   animation-name: animacao;
   animation-duration: 6s;
