@@ -78,13 +78,13 @@ header {
   -webkit-background-clip: text;
   font-weight: bold;
   font-size: 32px;
-  transition-property: background-image, font-size;
+  transition-property: background-image transform;
   transition-duration: 1.5s;
 }
 
 #logo:hover {
   background-image: var(--gradienteLogo);
-  font-size: 40px;
+  transform: scale(1.1);
 }
 
 .div {
@@ -120,7 +120,7 @@ header {
  
 }
 .rect {
-  width: 650px;
+  width: 500px;
   height: 500px;
   margin-bottom: 20px;
 }
@@ -192,7 +192,6 @@ p {
   flex-wrap: wrap;
   flex-shrink: 0;
   color: white;
-  width: 500px;
   padding: 20px;
   /* background-color: red; */
   border: solid 2px rgba(255, 255, 255, 0.055);
@@ -207,7 +206,6 @@ p {
   flex-wrap: wrap;
   flex-shrink: 0;
   color: white;
-  width: 500px;
   padding: 20px;
   /* background-color: red; */
   border: solid 2px rgba(255, 255, 255, 0.055);
@@ -222,7 +220,6 @@ p {
   flex-wrap: wrap;
   flex-shrink: 0;
   color: white;
-  width: 500px;
   padding: 20px;
   border: solid 2px rgba(255, 255, 255, 0.055);
   border-radius: 10px;
@@ -236,7 +233,6 @@ p {
   flex-wrap: wrap;
   flex-shrink: 0;
   color: white;
-  width: 500px;
   padding: 20px;
   border: solid 2px rgba(255, 255, 255, 0.055);
   border-radius: 10px;
@@ -245,18 +241,20 @@ p {
 }
 .tec {
   display: inline-block;
-  margin-left: 25px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px; 
+  list-style: none;
 }
 #tec {
   /* background-image: linear-gradient(to right, black,black,black,black,white);
    */
   background-color: rgba(255, 255, 255, 0.055);
   border-radius: 20px;
-  width: 600px;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  align-items: center;
   margin-bottom: 60px;
 }
 
@@ -320,7 +318,7 @@ p {
 #d1 {
   grid-area: d1;
   background-color: red;
-  width: 1300px;
+  width: 100%;
   justify-self: center;
   display: flex;
   justify-content: center;
@@ -372,3 +370,52 @@ p {
 .ppp:hover{
 font-size: 30px;
 }
+#fotominha{
+  background-color: green;
+}
+@media screen and (max-width: 850px){
+  ul{
+    display: none;
+  }
+  #ctt{
+    display: none;
+  }
+  .tecc{
+    display:block;
+  }
+  
+
+}
+@media screen and (max-width: 650px){
+  #sobre{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #p_sobremim{
+    margin-top: -100px;
+    width: 250px;
+  }
+  .rect{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width: 500px){
+  
+  .divv{
+    font-size: 4vw;
+  }
+  #tec{
+    font-size: 4vw;
+  }
+
+}
+@media screen and (max-width:400px){
+  .churrasP{
+    font-size: 20px;
+  }
+}
+
