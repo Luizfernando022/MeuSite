@@ -99,9 +99,15 @@ header {
 }
 #p_sobremim {
   color: rgb(255, 255, 255);
-  /* background-color: wheat; */
+  background-color:black;
+  border: 2px solid white ;
+  border-radius: 10px;
   width: 500px;
   /* margin-right: 390px; */
+}
+#sobre{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .liLogo {
@@ -130,6 +136,7 @@ header {
   display: flex;
   justify-content: center;
   color: white;
+  font-size: 16px;
   /* border-bottom: 2px solid white; */
 }
 
@@ -295,7 +302,7 @@ p {
 
 
 #links {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 600px;
   color: black;
   background-color: rgb(255, 255, 255);
@@ -310,7 +317,7 @@ p {
     "d3 d3 d3 d4 d4"
     "d5 d5 d5 d4 d4";
   background-color: rgb(0, 0, 0);
-  padding: 50px 0px 50px 0px;
+  padding: 50px 10px 50px 10px;
   gap: 10px;
   
 }
@@ -383,6 +390,9 @@ font-size: 30px;
   .tecc{
     display:block;
   }
+  #sobre{
+   flex-direction: column;
+  }
   
 
 }
@@ -394,12 +404,15 @@ font-size: 30px;
     justify-content: space-around;
     align-items: center;
   }
+  .title{
+    font-size: 3vw;
+  }
   #p_sobremim{
     margin-top: -100px;
-    width: 250px;
+    width: 90%;
   }
   .rect{
-    width: 90%;
+    width: calc(80% - 20px);
   }
 
 }
@@ -417,5 +430,71 @@ font-size: 30px;
   .churrasP{
     font-size: 20px;
   }
+  .title{
+    font-size: 4vw;
+  }
+  #links{
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+      justify-content: space-around;
+  }
+  .tecproj{
+    font-size: 4vw;
+  }
+  .churrasP{
+    font-size: 7vw;
+    
+  }
+  .pixelP{
+    font-size: 7vw;
+    
+  }
+  .h2proj{
+    font-size: 6vw;
+  }
+  .pproj{
+    font-size: 4vw;
+  }
+  .rect{
+    height: 130vw;
+  }
+}
+@media screen and (max-width:250px){
+  .title{
+    
+  }
+#p_sobremim{
+  font-size: 6.5vw;
+  margin-bottom: -50%;
+}
+#logo{
+  font-size: 14vw;
+}
+#sobre{ 
+    justify-content: space-evenly; 
+    height: 300vw;
+    align-items: center;
+}
+#fotominha{
+  width: calc(100% - 20px);
+  margin-top: -50%;
+}
+#img{
+  width: 100%;
+}
+.churrasP{
+  font-size: 6vw;
+  
+}
+.pixelP{
+  font-size: 6.5vw;
+  
+}
+.rect{
+  height: 100%;
+}
+
+
 }
 
