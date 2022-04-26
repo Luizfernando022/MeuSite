@@ -52,15 +52,16 @@ header {
   height: 60px;
   background-color: RGB(22, 27, 33);
   position: fixed;
-  margin-top: 470px;
+  margin-top: 35%;
   border-radius: 60px;
   display: flex;
   color: white;
   align-items: center;
   overflow: hidden;
   transition-property: width, border-radius;
-  transition-duration: 700ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0, 0);
+  z-index: 10;
 }
 
 #ctt:hover {
@@ -98,21 +99,13 @@ header {
 #prop2 {
   width: 500px;
   margin-left: 50px;
-  background-image: linear-gradient(to left, rgb(124, 21, 21),rgba(84, 35, 35, 0.405));
   padding: 20px;
-  border-radius: 100px 10px 100px 50px;
 }
 #prop1 {
   width: 500px;
   align-self: flex-end;
   margin-right: 50px;
-  background-image: linear-gradient(
-    to right,
-    rgb(124, 21, 21),
-    rgba(84, 35, 35, 0.405)
-  );
   padding: 20px;
-  border-radius: 100px 50px 100px 10px;
 }
 .divv {
   height: 500px;
@@ -127,9 +120,6 @@ header {
 
 #p_sobremim {
   color: rgb(255, 255, 255);
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 10px;
   width: 500px;
   /* margin-right: 390px; */
 }
@@ -188,7 +178,7 @@ a {
 }
 .pp:hover {
   transform: scale(1.05);
-  box-shadow: 1px 1px 30px 1px white;
+  box-shadow: 1px 1px 30px 1px rgba(255, 255, 255, 0.44);
 }
 
 ::-webkit-scrollbar {
@@ -215,7 +205,8 @@ p {
   justify-content: space-around;
   padding-top: 50px;
 }
-#churras {
+
+#techs{
   display: flex;
   justify-content: center;
   align-content: flex-start;
@@ -228,47 +219,9 @@ p {
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #3f3f3f;
   margin-bottom: 50px;
+  text-align: center;
 }
-#pixel {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  color: white;
-  padding: 20px;
-  /* background-color: red; */
-  border: solid 2px rgba(255, 255, 255, 0.055);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #3f3f3f;
-  margin-bottom: 50px;
-}
-#amarelo {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  color: white;
-  padding: 20px;
-  border: solid 2px rgba(255, 255, 255, 0.055);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #3f3f3f;
-  margin-bottom: 50px;
-}
-#azul {
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  color: white;
-  padding: 20px;
-  border: solid 2px rgba(255, 255, 255, 0.055);
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #3f3f3f;
-  margin-bottom: 50px;
-}
+
 .tec {
   display: inline-block;
   border-radius: 5px;
@@ -330,7 +283,6 @@ p {
   display: grid;
   /* justify-content: stretch; */
   /* align-content: stretch; */
-  color: black;
   grid-template-areas:
     "d1 d1 d1 d1 d1"
     "d2 d2 d2 d2 d2"
@@ -339,58 +291,34 @@ p {
     "d5 d5 d5 d4 d4";
   background-color: rgb(0, 0, 0);
   padding: 50px 10px 50px 10px;
-  gap: 10px;
+  row-gap: 10px;
 }
-
-#d1 {
-  grid-area: d1;
-  background-color: rgb(33, 33, 33);
+#d1,#d2,#d3,#d4,#d5{
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  width: 100%;
+  width: 95%;
   justify-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+#d1 {
+  grid-area: d1;
+  
 }
 #d2 {
   grid-area: d2;
-  background-color: rgb(33, 33, 33);
-  border-radius: 20px;
-  justify-self: center;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+
 }
 #d3 {
   grid-area: d3;
-  background-color: rgb(33, 33, 33);
-  border-radius: 20px;
-  justify-self: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #d4 {
   grid-area: d4;
-  background-color: rgb(33, 33, 33);
-  border-radius: 20px;
-  justify-self: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #d5 {
   grid-area: d5;
-  background-color: rgb(33, 33, 33);
-  border-radius: 20px;
-  width: 100%;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .ppp {
@@ -476,6 +404,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 600px;
+    align-items: center;
     justify-content: space-around;
   }
   .tecproj {
