@@ -1,3 +1,1 @@
-let p = document.getElementById('git')
-
-let ctt = document.getElementById('ctt')
+VanillaTilt.init(document.querySelectorAll(".techs"),{max:25,speed:300,glare:true,"max-glare":1});
