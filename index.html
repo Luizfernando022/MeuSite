@@ -253,8 +253,10 @@
     </div>
   </div>
 </body>
-<script src="scripts/vanilla-tilt.js"></script>
-<script src="js.js"></script>
+<script src="vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".rect"),{max:10,speed:1200,glare:true,"max-glare":0.5});
+</script>
 
 
 </html>
